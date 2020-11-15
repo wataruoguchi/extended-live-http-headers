@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: monospace;
+      word-wrap: break-word;
+      width: 100%;
+    }
+
+    #container {
+      white-space: pre-wrap;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .toggle {
+      cursor: pointer;
+    }
+
+    .request {
+      margin-bottom: 10px;
+    }
+    .request:nth-child(even) {
+      background-color: aliceblue;
+    }
+
+    .request-details {
+      display: none;
+    }
+    :checked~.request-details {
+      display: block;
+    }
+
+    .response-body {
+      display: none;
+      color: brown;
+    }
+    :checked~.response-body {
+      display: block;
+    }
+
+    .response-body-debug {
+      color: darkgreen;
+    }
+
+    .url {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kon-ni-chi-wa, debugger!</h1>
+  <div id="container"></div>
+  <script src="js/headers.js"></script>
+</body>
+</html>

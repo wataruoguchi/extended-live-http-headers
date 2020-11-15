@@ -1,0 +1,28 @@
+{
+  "name": "extended-live-http-headers",
+  "version": "1.0.0",
+  "description": "Displays the live log with the http request / response headers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "zip": "zip -r compressed.zip dist",
+    "clean": "rm -rf dist",
+    "test": "npx jest"
+  },
+  "keywords": [],
+  "author": "Wataru Oguchi <wataru@hey.com> (https://twitter.com/watarutwt/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "0.0.124",
+    "@types/jest": "^26.0.14",
+    "copy-webpack-plugin": "^6.2.1",
+    "jest": "^26.5.2",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.2.0"
+  }
+}

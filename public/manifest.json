@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Extended Live HTTP headers",
+  "description": "Displays the live log with the http request / response headers",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Extended Live HTTP headers"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": [
+    "debugger"
+  ]
+}
